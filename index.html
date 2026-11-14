@@ -3,169 +3,388 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Steady Sound — set it once, forget it's there</title>
-<meta name="description" content="Steady Sound is a tiny menu bar app for Mac that evens out everything you watch and listen to. Quiet dialogue comes up, loud explosions come down, automatically." />
+<title>Steady Sound: hear every word without touching the volume keys (Mac)</title>
+<meta name="description" content="Steady Sound is a tiny Mac menu bar app that evens out movies and TV. Quiet dialogue comes up, loud explosions come down, automatically, in every app. $5 a year." />
+<link rel="canonical" href="https://steadysound.app/" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="styles.css" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Steady Sound" />
+<meta property="og:title" content="Steady Sound: hands off the volume keys" />
+<meta property="og:description" content="A tiny Mac menu bar app that brings dialogue up and explosions down, in every app. $5 a year." />
+<meta property="og:url" content="https://steadysound.app/" />
+<meta name="twitter:card" content="summary" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Steady Sound",
+  "operatingSystem": "macOS 14.2 or later",
+  "applicationCategory": "MultimediaApplication",
+  "description": "A Mac menu bar app that automatically evens out loud and quiet moments in movies, TV and video, and brings dialogue forward.",
+  "offers": { "@type": "Offer", "price": "5.00", "priceCurrency": "USD" }
+}
+</script>
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">
-      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M2 12h2l2-7 3 14 3-10 2 6 2-3h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 12h2l2-7 3 14 3-10 2 6 2-3h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Steady Sound
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Sections">
       <a href="#how-it-works">How it works</a>
       <a href="#modes">Modes</a>
+      <a href="#privacy">Privacy</a>
       <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a class="button button-primary nav-cta" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy — $5/year</a>
+    <a class="button button-primary nav-cta" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Get it — $5/year</a>
   </div>
 </header>
 
 <main id="top">
 
+  <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-inner">
-      <h1>Set it once.<br>Forget it's there.</h1>
+      <p class="eyebrow">For Mac · lives in your menu bar</p>
+      <h1>Hear every word.<br>Leave the volume keys alone.</h1>
       <p class="hero-sub">
-        Steady Sound lives quietly in your Mac's menu bar. Quiet dialogue comes up,
-        loud explosions come down — automatically, in every app you watch or listen to.
+        Steady Sound evens out everything you watch on your Mac. Quiet dialogue comes up,
+        loud explosions come down, automatically, in every app. Set it once and forget it's there.
       </p>
       <div class="hero-actions">
-        <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy Steady Sound — $5/year</a>
-        <span class="hero-note">macOS 14.2 or later · use on up to 3 Macs</span>
+        <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; download — $5/year</a>
+        <ul class="trust-row">
+          <li>macOS 14.2 (Sonoma) or later</li>
+          <li>Use on up to 3 Macs</li>
+          <li>One-minute setup</li>
+        </ul>
       </div>
 
       <div class="menubar-mock" aria-hidden="true">
         <div class="menubar-mock-bar">
           <span class="menubar-mock-dots"><i></i><i></i><i></i></span>
-          <span class="menubar-mock-icons">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="menubar-mock-wave">
-              <path d="M2 12h2l2-7 3 14 3-10 2 6 2-3h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg viewBox="0 0 24 24" fill="none" class="menubar-mock-wave"><path d="M2 12h2l2-7 3 14 3-10 2 6 2-3h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <div class="menubar-mock-dropdown">
-          <div class="menubar-mock-row menubar-mock-row-toggle">
-            <span>Steady Sound</span>
-            <span class="menubar-mock-check">✓</span>
-          </div>
+          <div class="menubar-mock-row menubar-mock-row-toggle"><span>Steady Sound</span><span class="menubar-mock-check">✓</span></div>
           <div class="menubar-mock-divider"></div>
           <div class="menubar-mock-row"><span>Normal</span><span class="menubar-mock-check">✓</span></div>
           <div class="menubar-mock-row"><span>Night</span></div>
           <div class="menubar-mock-row"><span>Clear Voice</span></div>
+          <div class="menubar-mock-divider"></div>
+          <div class="menubar-mock-row"><span>Launch at login</span><span class="menubar-mock-check">✓</span></div>
+          <div class="menubar-mock-row menubar-mock-row-dim"><span>Advanced…</span></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WORKS WITH -->
   <section class="logos">
     <div class="wrap">
-      <p class="logos-label">Works with everything on your Mac</p>
+      <p class="logos-label">Tested with the apps you already use</p>
       <div class="logos-row">
         <span>Netflix</span>
+        <span>Apple TV app</span>
         <span>YouTube</span>
-        <span>Max</span>
         <span>Plex</span>
-        <span>Any browser</span>
-        <span>Any app</span>
+        <span>Safari &amp; Chrome</span>
+        <span>Anything that plays sound</span>
       </div>
     </div>
   </section>
 
-  <section id="how-it-works" class="section">
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="wrap narrow">
+      <h2>It's not your ears. It's the mix.</h2>
+      <p class="section-sub">Movies are mixed for theaters with huge speakers. On a laptop or a desk setup, that means whispers you can't hear, explosions that make you lunge for F11, and a finger parked on the volume keys all movie long.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number">50%</div>
+          <p>of Americans watch with subtitles on most of the time.</p>
+        </div>
+        <div class="stat">
+          <div class="stat-number">55%</div>
+          <p>say dialogue is harder to hear than it used to be.</p>
+        </div>
+      </div>
+      <p class="stat-source">Source: Preply survey of U.S. viewers, 2024.</p>
+
+      <div class="wave-compare" aria-hidden="true">
+        <figure>
+          <svg viewBox="0 0 600 100" preserveAspectRatio="none">
+            <line class="wave-mid" x1="0" y1="50" x2="600" y2="50"/>
+            <g class="wave-scroll"><path class="wave wave-before" d="M3 44.2V55.8M9 45.3V54.7M15 42.1V57.9M21 45.9V54.1M27 42.9V57.1M33 44.0V56.0M39 45.9V54.1M45 43.1V56.9M51 46.1V53.9M57 43.5V56.5M63 45.9V54.1M69 45.7V54.3M75 43.6V56.4M81 41.0V59.0M87 45.5V54.5M93 44.9V55.1M99 42.3V57.7M105 40.2V59.8M111 42.6V57.4M117 43.8V56.2M123 40.0V60.0M129 46.0V54.0M135 40.8V59.2M141 44.5V55.5M147 45.4V54.6M153 45.6V54.4M159 44.3V55.7M165 41.1V58.9M171 8.8V91.2M177 11.2V88.8M183 14.8V85.2M189 13.1V86.9M195 10.6V89.4M201 8.8V91.2M207 12.1V87.9M213 7.5V92.5M219 8.9V91.1M225 42.9V57.1M231 40.7V59.3M237 41.6V58.4M243 44.5V55.5M249 40.0V60.0M255 45.6V54.4M261 43.6V56.4M267 41.4V58.6M273 45.3V54.7M279 43.2V56.8M285 46.1V53.9M291 42.0V58.0M297 41.4V58.6M303 42.6V57.4M309 40.7V59.3M315 16.0V84.0M321 17.1V82.9M327 43.4V56.6M333 40.9V59.1M339 40.2V59.8M345 43.3V56.7M351 42.0V58.0M357 45.9V54.1M363 41.8V58.2M369 42.2V57.8M375 39.9V60.1M381 41.0V59.0M387 44.5V55.5M393 43.8V56.2M399 42.0V58.0M405 46.2V53.8M411 43.3V56.7M417 45.2V54.8M423 14.8V85.2M429 14.0V86.0M435 11.0V89.0M441 14.6V85.4M447 9.2V90.8M453 6.1V93.9M459 12.3V87.7M465 11.4V88.6M471 40.6V59.4M477 40.2V59.8M483 45.3V54.7M489 45.2V54.8M495 44.8V55.2M501 44.8V55.2M507 43.2V56.8M513 42.5V57.5M519 44.6V55.4M525 46.3V53.7M531 43.6V56.4M537 43.9V56.1M543 42.7V57.3M549 40.2V59.8M555 41.9V58.1M561 43.0V57.0M567 42.3V57.7M573 42.0V58.0M579 46.0V54.0M585 40.5V59.5M591 41.3V58.7M597 40.7V59.3M603 44.2V55.8M609 45.3V54.7M615 42.1V57.9M621 45.9V54.1M627 42.9V57.1M633 44.0V56.0M639 45.9V54.1M645 43.1V56.9M651 46.1V53.9M657 43.5V56.5M663 45.9V54.1M669 45.7V54.3M675 43.6V56.4M681 41.0V59.0M687 45.5V54.5M693 44.9V55.1M699 42.3V57.7M705 40.2V59.8M711 42.6V57.4M717 43.8V56.2M723 40.0V60.0M729 46.0V54.0M735 40.8V59.2M741 44.5V55.5M747 45.4V54.6M753 45.6V54.4M759 44.3V55.7M765 41.1V58.9M771 8.8V91.2M777 11.2V88.8M783 14.8V85.2M789 13.1V86.9M795 10.6V89.4M801 8.8V91.2M807 12.1V87.9M813 7.5V92.5M819 8.9V91.1M825 42.9V57.1M831 40.7V59.3M837 41.6V58.4M843 44.5V55.5M849 40.0V60.0M855 45.6V54.4M861 43.6V56.4M867 41.4V58.6M873 45.3V54.7M879 43.2V56.8M885 46.1V53.9M891 42.0V58.0M897 41.4V58.6M903 42.6V57.4M909 40.7V59.3M915 16.0V84.0M921 17.1V82.9M927 43.4V56.6M933 40.9V59.1M939 40.2V59.8M945 43.3V56.7M951 42.0V58.0M957 45.9V54.1M963 41.8V58.2M969 42.2V57.8M975 39.9V60.1M981 41.0V59.0M987 44.5V55.5M993 43.8V56.2M999 42.0V58.0M1005 46.2V53.8M1011 43.3V56.7M1017 45.2V54.8M1023 14.8V85.2M1029 14.0V86.0M1035 11.0V89.0M1041 14.6V85.4M1047 9.2V90.8M1053 6.1V93.9M1059 12.3V87.7M1065 11.4V88.6M1071 40.6V59.4M1077 40.2V59.8M1083 45.3V54.7M1089 45.2V54.8M1095 44.8V55.2M1101 44.8V55.2M1107 43.2V56.8M1113 42.5V57.5M1119 44.6V55.4M1125 46.3V53.7M1131 43.6V56.4M1137 43.9V56.1M1143 42.7V57.3M1149 40.2V59.8M1155 41.9V58.1M1161 43.0V57.0M1167 42.3V57.7M1173 42.0V58.0M1179 46.0V54.0M1185 40.5V59.5M1191 41.3V58.7M1197 40.7V59.3"/></g>
+          </svg>
+          <figcaption>Without Steady Sound: whisper, BOOM, whisper</figcaption>
+        </figure>
+        <figure>
+          <svg viewBox="0 0 600 100" preserveAspectRatio="none">
+            <line class="wave-mid" x1="0" y1="50" x2="600" y2="50"/>
+            <g class="wave-scroll"><path class="wave wave-after" d="M3 29.6V70.4M9 31.7V68.3M15 30.9V69.1M21 33.2V66.8M27 30.0V70.0M33 32.9V67.1M39 33.4V66.6M45 32.0V68.0M51 33.0V67.0M57 31.5V68.5M63 33.4V66.6M69 33.6V66.4M75 32.4V67.6M81 32.0V68.0M87 31.9V68.1M93 33.3V66.7M99 28.8V71.2M105 29.4V70.6M111 32.2V67.8M117 32.0V68.0M123 30.6V69.4M129 32.0V68.0M135 31.8V68.2M141 29.4V70.6M147 29.0V71.0M153 31.5V68.5M159 31.1V68.9M165 32.1V67.9M171 24.7V75.3M177 24.7V75.3M183 24.7V75.3M189 24.7V75.3M195 24.7V75.3M201 24.7V75.3M207 24.7V75.3M213 24.7V75.3M219 24.7V75.3M225 30.4V69.6M231 32.3V67.7M237 30.2V69.8M243 28.8V71.2M249 28.2V71.8M255 30.4V69.6M261 31.9V68.1M267 30.9V69.1M273 32.8V67.2M279 29.4V70.6M285 31.3V68.7M291 29.1V70.9M297 31.0V69.0M303 31.8V68.2M309 28.6V71.4M315 24.7V75.3M321 24.7V75.3M327 29.3V70.7M333 28.7V71.3M339 28.9V71.1M345 32.0V68.0M351 30.3V69.7M357 32.1V67.9M363 32.5V67.5M369 32.6V67.4M375 30.9V69.1M381 31.3V68.7M387 30.1V69.9M393 28.8V71.2M399 30.7V69.3M405 29.4V70.6M411 28.5V71.5M417 29.1V70.9M423 24.7V75.3M429 24.7V75.3M435 24.7V75.3M441 24.9V75.1M447 24.7V75.3M453 24.7V75.3M459 24.7V75.3M465 24.7V75.3M471 30.2V69.8M477 29.2V70.8M483 29.9V70.1M489 33.1V66.9M495 30.4V69.6M501 29.2V70.8M507 29.4V70.6M513 29.4V70.6M519 31.2V68.8M525 33.0V67.0M531 29.5V70.5M537 31.7V68.3M543 29.2V70.8M549 27.8V72.2M555 30.9V69.1M561 31.1V68.9M567 28.4V71.6M573 29.4V70.6M579 32.9V67.1M585 31.8V68.2M591 31.8V68.2M597 28.2V71.8M603 29.6V70.4M609 31.7V68.3M615 30.9V69.1M621 33.2V66.8M627 30.0V70.0M633 32.9V67.1M639 33.4V66.6M645 32.0V68.0M651 33.0V67.0M657 31.5V68.5M663 33.4V66.6M669 33.6V66.4M675 32.4V67.6M681 32.0V68.0M687 31.9V68.1M693 33.3V66.7M699 28.8V71.2M705 29.4V70.6M711 32.2V67.8M717 32.0V68.0M723 30.6V69.4M729 32.0V68.0M735 31.8V68.2M741 29.4V70.6M747 29.0V71.0M753 31.5V68.5M759 31.1V68.9M765 32.1V67.9M771 24.7V75.3M777 24.7V75.3M783 24.7V75.3M789 24.7V75.3M795 24.7V75.3M801 24.7V75.3M807 24.7V75.3M813 24.7V75.3M819 24.7V75.3M825 30.4V69.6M831 32.3V67.7M837 30.2V69.8M843 28.8V71.2M849 28.2V71.8M855 30.4V69.6M861 31.9V68.1M867 30.9V69.1M873 32.8V67.2M879 29.4V70.6M885 31.3V68.7M891 29.1V70.9M897 31.0V69.0M903 31.8V68.2M909 28.6V71.4M915 24.7V75.3M921 24.7V75.3M927 29.3V70.7M933 28.7V71.3M939 28.9V71.1M945 32.0V68.0M951 30.3V69.7M957 32.1V67.9M963 32.5V67.5M969 32.6V67.4M975 30.9V69.1M981 31.3V68.7M987 30.1V69.9M993 28.8V71.2M999 30.7V69.3M1005 29.4V70.6M1011 28.5V71.5M1017 29.1V70.9M1023 24.7V75.3M1029 24.7V75.3M1035 24.7V75.3M1041 24.9V75.1M1047 24.7V75.3M1053 24.7V75.3M1059 24.7V75.3M1065 24.7V75.3M1071 30.2V69.8M1077 29.2V70.8M1083 29.9V70.1M1089 33.1V66.9M1095 30.4V69.6M1101 29.2V70.8M1107 29.4V70.6M1113 29.4V70.6M1119 31.2V68.8M1125 33.0V67.0M1131 29.5V70.5M1137 31.7V68.3M1143 29.2V70.8M1149 27.8V72.2M1155 30.9V69.1M1161 31.1V68.9M1167 28.4V71.6M1173 29.4V70.6M1179 32.9V67.1M1185 31.8V68.2M1191 31.8V68.2M1197 28.2V71.8"/></g>
+          </svg>
+          <figcaption>With Steady Sound: everything in a comfortable range</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="section section-alt">
     <div class="wrap">
-      <h2>An appliance, not a toolkit</h2>
-      <p class="section-sub">No manual mixer, no sliders to fight with, nothing to configure. Pick a mode once and stop reaching for the volume.</p>
+      <h2>Up and running in two minutes</h2>
+      <p class="section-sub">No mixer to learn. Pick a mode once and take your hand off the keyboard.</p>
 
-      <div class="cards">
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>Buy and download</h3>
+          <p>Check out in under a minute. Your download link and license key arrive together by email.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>Open it and paste your key</h3>
+          <p>Steady Sound appears in your menu bar. Paste your key, then allow it to hear your Mac's audio when macOS asks.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>Press play on anything</h3>
+          <p>Pick a mode and get back to your show. Steady Sound works quietly in the background from then on.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="wrap">
+      <h2>Small app. Noticeable difference.</h2>
+      <p class="section-sub">Everything it does happens automatically, in real time, on every sound your Mac plays.</p>
+
+      <div class="cards cards-6">
         <div class="card">
-          <div class="card-icon">🔊</div>
-          <h3>It hears everything</h3>
-          <p>Steady Sound taps your Mac's system audio directly — Netflix, a browser tab, a video call, anything playing.</p>
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h3l3-7 6 14 3-7h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Evens out loud and quiet</h3>
+          <p>Quiet scenes come up. Loud moments come down. Smoothly, without pumping or clicking.</p>
         </div>
         <div class="card">
-          <div class="card-icon">⚖️</div>
-          <h3>It evens things out</h3>
-          <p>Quiet dialogue comes up. Loud moments come down. Smoothly, automatically, without pumping or clicking.</p>
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3ZM5 11a7 7 0 0 0 14 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <h3>Brings voices forward</h3>
+          <p>Speech is lifted out of the music and effects, so you can follow along, even on small laptop speakers.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🎙️</div>
-          <h3>It brings voices forward</h3>
-          <p>A touch of EQ and center-channel emphasis makes speech clearer, even on small laptop speakers.</p>
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <h3>Works in every app</h3>
+          <p>Streaming apps, browser tabs, video players, games. If your Mac plays it, Steady Sound evens it out.</p>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v6H5a1 1 0 0 1-1-1v-5ZM20 14h-3v6h2a1 1 0 0 0 1-1v-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <h3>Follows your speakers</h3>
+          <p>Switch to AirPods or headphones mid-episode and it keeps going. It also picks up right where it left off after your Mac sleeps.</p>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <h3>No lip-sync lag</h3>
+          <p>It adds only a few milliseconds of delay, far too little to see. Voices stay matched to mouths.</p>
+        </div>
+        <div class="card">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v9M6.3 6.3a8 8 0 1 0 11.4 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <h3>Off means off</h3>
+          <p>One click and your Mac sounds exactly as it did before. Starts with your Mac if you want it to.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- MODES -->
   <section id="modes" class="section section-alt">
     <div class="wrap">
-      <h2>Three modes. No knobs.</h2>
-      <p class="section-sub">Pick the one that matches what you're doing. That's the whole interface.</p>
+      <h2>Three modes. That's it.</h2>
+      <p class="section-sub">Pick the one that fits what you're watching. Most people never need anything else.</p>
 
       <div class="modes">
         <div class="mode-card">
+          <p class="mode-tag">Everyday</p>
           <h3>Normal</h3>
-          <p>You barely notice it, but you stop reaching for the volume. Movies still sound big.</p>
+          <p>You barely notice it, but you stop tapping the volume keys. Movies still sound big.</p>
         </div>
         <div class="mode-card mode-card-featured">
+          <p class="mode-tag">Late nights</p>
           <h3>Night</h3>
-          <p>Everything sits in a narrow, low band. Whispers are audible and explosions won't wake anyone.</p>
+          <p>Everything sits in a narrow, low range. Whispers stay audible and explosions won't wake anyone.</p>
         </div>
         <div class="mode-card">
+          <p class="mode-tag">Mumbly dramas</p>
           <h3>Clear Voice</h3>
-          <p>Speech is obviously forward, even at the cost of some music and effects. For when everyone mumbles.</p>
+          <p>Speech comes clearly forward, even at the cost of some music and effects. For when everyone mumbles.</p>
+        </div>
+      </div>
+
+      <div class="advanced-note">
+        <h3>Like to tinker?</h3>
+        <p>An optional Advanced window adds a simple low, mid and high EQ on top of any mode. It's off by default and tucked away so it never gets in the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="section">
+    <div class="wrap">
+      <h2>Made for the moments you lunge for the volume keys</h2>
+      <div class="usecases">
+        <div class="usecase">
+          <h3>After the kids are asleep</h3>
+          <p>Night mode keeps the action scenes from carrying through the walls, and you can still hear what people are saying.</p>
+        </div>
+        <div class="usecase">
+          <h3>On laptop speakers</h3>
+          <p>Small speakers lose dialogue first. Steady Sound lifts voices so you're not leaning in to catch every line.</p>
+        </div>
+        <div class="usecase">
+          <h3>Watching with someone who's hard of hearing</h3>
+          <p>Clear Voice puts speech front and center without turning everything up to a level that bothers everyone else.</p>
+        </div>
+        <div class="usecase">
+          <h3>Binging YouTube</h3>
+          <p>Every creator mixes at a different level. Steady Sound keeps one video from blasting louder than the last, so autoplay never makes you jump.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="pricing" class="section">
+  <!-- COMPARISON -->
+  <section class="section section-alt">
+    <div class="wrap narrow">
+      <h2>Better than the usual workarounds</h2>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead>
+            <tr><th scope="col"></th><th scope="col">Subtitles</th><th scope="col">Tapping the volume keys</th><th scope="col">In-app audio settings</th><th scope="col" class="compare-us">Steady Sound</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Hear dialogue clearly</th><td>Read it instead</td><td>Sometimes</td><td>Rarely offered</td><td class="compare-us">Yes</td></tr>
+            <tr><th scope="row">Tames sudden loud moments</th><td>No</td><td>After the jump scare</td><td>Rarely offered</td><td class="compare-us">Yes, automatically</td></tr>
+            <tr><th scope="row">Works in every app on your Mac</th><td>Depends on the app</td><td>Yes</td><td>One app at a time</td><td class="compare-us">Yes</td></tr>
+            <tr><th scope="row">Hands-free</th><td>Yes</td><td>No</td><td>Yes</td><td class="compare-us">Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy" class="section">
+    <div class="wrap narrow privacy">
+      <h2>Hears everything. Keeps nothing.</h2>
+      <p class="section-sub">Steady Sound has to listen to your Mac's audio to even it out. Here's exactly what that means.</p>
+      <ul class="checklist">
+        <li><strong>Nothing is recorded.</strong> Sound is processed live and never written to disk.</li>
+        <li><strong>Nothing leaves your Mac.</strong> All processing happens on your computer.</li>
+        <li><strong>No account, no analytics, no ads.</strong> The only time Steady Sound goes online is to check that your license is valid.</li>
+        <li><strong>You stay in control.</strong> macOS asks your permission first, and you can turn it off anytime in System Settings.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section section-alt">
     <div class="wrap pricing-wrap">
-      <h2>$5 a year</h2>
-      <p class="section-sub">No manual mixer, no accounts to manage, no analytics watching you. Just a Mac app that quietly does its job.</p>
+      <h2>$5 a year. Less than one movie rental.</h2>
+      <p class="section-sub">One simple plan with everything included.</p>
 
       <div class="price-card">
         <div class="price-amount">$5<span>/year</span></div>
         <ul class="price-features">
-          <li>Automatic leveling across every app</li>
-          <li>Voice clarity in every mode</li>
-          <li>Normal, Night, and Clear Voice</li>
+          <li>Automatic leveling in every app</li>
+          <li>Voice clarity built into every mode</li>
+          <li>Normal, Night and Clear Voice, plus optional EQ</li>
+          <li>Starts with your Mac</li>
           <li>Use on up to 3 Macs</li>
-          <li>Signed, notarized, auto-updating</li>
         </ul>
-        <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy Steady Sound</a>
-        <p class="price-note">You'll get a license key by email right after checkout.</p>
+        <a class="button button-primary button-large button-block" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; download Steady Sound</a>
+        <p class="price-note">Your download link and license key arrive by email right after checkout. Renews yearly; cancel anytime.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt faq">
+  <!-- MAKER -->
+  <section class="section">
+    <div class="wrap narrow maker">
+      <h2>Made by one person who cares how things sound</h2>
+      <p>Steady Sound is built by Neal Danes, a musician in Michigan who got tired of tapping the volume up for every line and slamming it back down for every explosion. It's an independent app with no investors, no tracking and no upsells. Just one small tool that does one job well.</p>
+      <p>Questions or feedback? <a href="mailto:steadysoundapp@gmail.com">steadysoundapp@gmail.com</a> reaches me directly.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-alt faq">
     <div class="wrap">
-      <h2>A few questions</h2>
+      <h2>Questions, answered</h2>
       <div class="faq-list">
-        <details>
+        <details open>
           <summary>Does Steady Sound record or save anything?</summary>
-          <p>No. Steady Sound never records or saves your audio. It processes sound live and nothing is written to disk.</p>
+          <p>No. Steady Sound processes sound live and never records or saves your audio. Nothing is written to disk and nothing leaves your Mac.</p>
         </details>
         <details>
           <summary>What Mac do I need?</summary>
           <p>macOS 14.2 (Sonoma) or later. Steady Sound uses a newer Core Audio feature that isn't available on older versions of macOS.</p>
         </details>
         <details>
+          <summary>Does it work with Netflix and other streaming services?</summary>
+          <p>Yes. We've tested it with Netflix in Safari, YouTube in Chrome, the Apple TV app and Plex. It works on your Mac's system audio, so any app that plays sound works.</p>
+        </details>
+        <details>
           <summary>Does it work with AirPods and other Bluetooth audio?</summary>
-          <p>Yes. Steady Sound follows your Mac's current output device, so switching to AirPods or headphones mid-playback keeps working.</p>
+          <p>Yes. Steady Sound follows your Mac's current output, so switching to AirPods or headphones mid-playback keeps working.</p>
+        </details>
+        <details>
+          <summary>Will voices get out of sync with the picture?</summary>
+          <p>No. Steady Sound adds only a few milliseconds of delay, too little to see.</p>
+        </details>
+        <details>
+          <summary>Is there a free trial?</summary>
+          <p>No. At $5 a year we kept it simple: buy it, paste your key, and it works on up to 3 Macs. If something isn't working for you, email us and we'll help.</p>
+        </details>
+        <details>
+          <summary>How do I download it?</summary>
+          <p>Right after checkout you'll get an email with your download link and your license key. Open the app, paste the key, and you're set.</p>
+        </details>
+        <details>
+          <summary>Do I need to be online?</summary>
+          <p>Only to activate. After that it checks your license now and then, and keeps working for up to two weeks without a connection.</p>
         </details>
         <details>
           <summary>Can I use it on more than one Mac?</summary>
-          <p>Yes, one license covers up to 3 Macs. Deactivate a Mac you're no longer using from the app's About window to free up a slot.</p>
+          <p>Yes, one license covers up to 3 Macs. To free up a slot, open the app's About window on a Mac you no longer use and click Deactivate this Mac.</p>
+        </details>
+        <details>
+          <summary>What happens if I cancel?</summary>
+          <p>Steady Sound keeps working until the end of the year you paid for. After that it switches off and your Mac's audio goes back to normal. Nothing breaks.</p>
+        </details>
+        <details>
+          <summary>Will it change how my music sounds?</summary>
+          <p>Steady Sound is tuned for movies, TV and video. Music will sound a bit more even. Turn it off with one click from the menu bar when you'd rather hear music untouched.</p>
         </details>
       </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section final-cta">
+    <div class="wrap">
+      <h2>Your next movie night, hands off the keyboard</h2>
+      <p class="section-sub">Set it once. Forget it's there.</p>
+      <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; download — $5/year</a>
+      <p class="hero-note">macOS 14.2 or later · use on up to 3 Macs</p>
     </div>
   </section>
 
@@ -174,7 +393,12 @@
 <footer class="footer">
   <div class="wrap footer-inner">
     <span>© 2026 Steady Sound</span>
-    <a href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy</a>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#privacy">Privacy</a>
+      <a href="#faq">FAQ</a>
+      <a href="mailto:steadysoundapp@gmail.com">Support</a>
+      <a href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy</a>
+    </nav>
   </div>
 </footer>
 
