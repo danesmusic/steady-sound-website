@@ -147,6 +147,8 @@ p { color: var(--text-dim); margin: 0 0 16px; }
 .menubar-mock-dropdown { position: relative; }
 .mode-check { opacity: 0; transition: opacity 0.2s ease; }
 .mode-row-active .mode-check { opacity: 1; }
+.mode-row { transition: background 0.2s ease; border-radius: 6px; }
+.mode-row.is-hovered { background: rgba(124, 157, 255, 0.16); }
 .menubar-mock-cursor {
   position: absolute;
   top: 0; left: 0;
@@ -154,7 +156,7 @@ p { color: var(--text-dim); margin: 0 0 16px; }
   color: var(--text);
   opacity: 0;
   pointer-events: none;
-  transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1), left 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  transition: top 0.6s cubic-bezier(0.33, 0, 0.2, 1), left 0.6s cubic-bezier(0.33, 0, 0.2, 1), opacity 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
   z-index: 2;
 }
@@ -227,7 +229,6 @@ p { color: var(--text-dim); margin: 0 0 16px; }
   padding: 28px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.mode-card-featured,
 .mode-card:hover {
   border-color: var(--accent);
   box-shadow: 0 0 0 1px var(--accent) inset;
