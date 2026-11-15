@@ -6,6 +6,14 @@
     <description>Updates to Steady Sound.</description>
     <language>en</language>
     <item>
+      <title>Version 1.0.1</title>
+      <pubDate>Sun, 15 Nov 2026 17:13:20 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.2</sparkle:minimumSystemVersion>
+      <enclosure url="https://steadysound.app/downloads/SteadySound-1.0.1.dmg" sparkle:edSignature="yY4BqBeiUPdH+uzyMwUMTwa4b3YmbjWTbC533oeW7T8bGrf1ejQ5BuM01MgzaGZ6Lxper3eXCPqx3rqVq9jACw==" length="1527982" type="application/octet-stream" />
+    </item>
+    <item>
       <title>Version 1.0.0</title>
       <pubDate>Sun, 15 Nov 2026 16:53:02 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
