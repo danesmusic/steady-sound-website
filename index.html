@@ -33,7 +33,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">
-      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 12h2l2-7 3 14 3-10 2 6 2-3h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 12h2l2-7 3 14 3-10 2 6 2-3h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Steady Sound
     </a>
     <nav class="nav-links" aria-label="Sections">
@@ -43,7 +43,7 @@
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="button button-primary nav-cta" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Get it — $5/year</a>
+    <a class="button button-primary nav-cta" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Get Steady Sound</a>
   </div>
 </header>
 
@@ -55,11 +55,11 @@
       <p class="eyebrow">For Mac · lives in your menu bar</p>
       <h1>Hear every word.<br>Leave the volume keys alone.</h1>
       <p class="hero-sub">
-        Steady Sound evens out everything you watch on your Mac. Quiet dialogue comes up,
-        loud explosions come down, automatically, in every app. Set it once and forget it's there.
+        Steady Sound evens out the audio on every video you watch on your Mac. Quiet dialogue comes up,
+        loud explosions come down, automatically, in every app. Set it and forget it. Sonic peace of mind for only $5 a year.
       </p>
       <div class="hero-actions">
-        <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; download — $5/year</a>
+        <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; Download. $5/Year</a>
         <ul class="trust-row">
           <li>macOS 14.2 (Sonoma) or later</li>
           <li>Use on up to 3 Macs</li>
@@ -75,12 +75,15 @@
         <div class="menubar-mock-dropdown">
           <div class="menubar-mock-row menubar-mock-row-toggle"><span>Steady Sound</span><span class="menubar-mock-check">✓</span></div>
           <div class="menubar-mock-divider"></div>
-          <div class="menubar-mock-row"><span>Normal</span><span class="menubar-mock-check">✓</span></div>
-          <div class="menubar-mock-row"><span>Night</span></div>
-          <div class="menubar-mock-row"><span>Clear Voice</span></div>
+          <div class="menubar-mock-row mode-row mode-row-active"><span>Normal</span><span class="menubar-mock-check mode-check">✓</span></div>
+          <div class="menubar-mock-row mode-row"><span>Night</span><span class="menubar-mock-check mode-check">✓</span></div>
+          <div class="menubar-mock-row mode-row"><span>Clear Voice</span><span class="menubar-mock-check mode-check">✓</span></div>
           <div class="menubar-mock-divider"></div>
           <div class="menubar-mock-row"><span>Launch at login</span><span class="menubar-mock-check">✓</span></div>
           <div class="menubar-mock-row menubar-mock-row-dim"><span>Advanced…</span></div>
+          <div class="menubar-mock-cursor" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2.6 19.8 10l-6.7 1.8L11 18.5 4 2.6Z"/></svg>
+          </div>
         </div>
       </div>
     </div>
@@ -89,14 +92,32 @@
   <!-- WORKS WITH -->
   <section class="logos">
     <div class="wrap">
-      <p class="logos-label">Tested with the apps you already use</p>
-      <div class="logos-row">
+      <p class="logos-label">Proven audio improvement with the apps you already use</p>
+    </div>
+    <div class="logos-marquee" aria-hidden="true">
+      <div class="logos-track">
         <span>Netflix</span>
-        <span>Apple TV app</span>
+        <span>Apple TV</span>
+        <span>Hulu</span>
         <span>YouTube</span>
+        <span>Disney+</span>
+        <span>HBO Max</span>
         <span>Plex</span>
-        <span>Safari &amp; Chrome</span>
-        <span>Anything that plays sound</span>
+        <span>Safari</span>
+        <span>Chrome</span>
+        <span>DuckDuckGo</span>
+        <span>Control the sound from your Mac</span>
+        <span>Netflix</span>
+        <span>Apple TV</span>
+        <span>Hulu</span>
+        <span>YouTube</span>
+        <span>Disney+</span>
+        <span>HBO Max</span>
+        <span>Plex</span>
+        <span>Safari</span>
+        <span>Chrome</span>
+        <span>DuckDuckGo</span>
+        <span>Control the sound from your Mac</span>
       </div>
     </div>
   </section>
@@ -105,7 +126,7 @@
   <section class="section">
     <div class="wrap narrow">
       <h2>It's not your ears. It's the mix.</h2>
-      <p class="section-sub">Movies are mixed for theaters with huge speakers. On a laptop or a desk setup, that means whispers you can't hear, explosions that make you lunge for F11, and a finger parked on the volume keys all movie long.</p>
+      <p class="section-sub">Movies are mixed for theaters with giant speakers. Hollywood audio engineers must think we're all watching their shows in our fancy home theater. Here in reality, on a laptop or a small speaker setup, that means whispers you can't hear, explosions that make you lunge for the mute button, and a finger parked on the volume keys.</p>
 
       <div class="stats">
         <div class="stat">
@@ -121,18 +142,20 @@
 
       <div class="wave-compare" aria-hidden="true">
         <figure>
+          <p class="wave-label">Without Steady Sound</p>
           <svg viewBox="0 0 600 100" preserveAspectRatio="none">
             <line class="wave-mid" x1="0" y1="50" x2="600" y2="50"/>
             <g class="wave-scroll"><path class="wave wave-before" d="M3 44.2V55.8M9 45.3V54.7M15 42.1V57.9M21 45.9V54.1M27 42.9V57.1M33 44.0V56.0M39 45.9V54.1M45 43.1V56.9M51 46.1V53.9M57 43.5V56.5M63 45.9V54.1M69 45.7V54.3M75 43.6V56.4M81 41.0V59.0M87 45.5V54.5M93 44.9V55.1M99 42.3V57.7M105 40.2V59.8M111 42.6V57.4M117 43.8V56.2M123 40.0V60.0M129 46.0V54.0M135 40.8V59.2M141 44.5V55.5M147 45.4V54.6M153 45.6V54.4M159 44.3V55.7M165 41.1V58.9M171 8.8V91.2M177 11.2V88.8M183 14.8V85.2M189 13.1V86.9M195 10.6V89.4M201 8.8V91.2M207 12.1V87.9M213 7.5V92.5M219 8.9V91.1M225 42.9V57.1M231 40.7V59.3M237 41.6V58.4M243 44.5V55.5M249 40.0V60.0M255 45.6V54.4M261 43.6V56.4M267 41.4V58.6M273 45.3V54.7M279 43.2V56.8M285 46.1V53.9M291 42.0V58.0M297 41.4V58.6M303 42.6V57.4M309 40.7V59.3M315 16.0V84.0M321 17.1V82.9M327 43.4V56.6M333 40.9V59.1M339 40.2V59.8M345 43.3V56.7M351 42.0V58.0M357 45.9V54.1M363 41.8V58.2M369 42.2V57.8M375 39.9V60.1M381 41.0V59.0M387 44.5V55.5M393 43.8V56.2M399 42.0V58.0M405 46.2V53.8M411 43.3V56.7M417 45.2V54.8M423 14.8V85.2M429 14.0V86.0M435 11.0V89.0M441 14.6V85.4M447 9.2V90.8M453 6.1V93.9M459 12.3V87.7M465 11.4V88.6M471 40.6V59.4M477 40.2V59.8M483 45.3V54.7M489 45.2V54.8M495 44.8V55.2M501 44.8V55.2M507 43.2V56.8M513 42.5V57.5M519 44.6V55.4M525 46.3V53.7M531 43.6V56.4M537 43.9V56.1M543 42.7V57.3M549 40.2V59.8M555 41.9V58.1M561 43.0V57.0M567 42.3V57.7M573 42.0V58.0M579 46.0V54.0M585 40.5V59.5M591 41.3V58.7M597 40.7V59.3M603 44.2V55.8M609 45.3V54.7M615 42.1V57.9M621 45.9V54.1M627 42.9V57.1M633 44.0V56.0M639 45.9V54.1M645 43.1V56.9M651 46.1V53.9M657 43.5V56.5M663 45.9V54.1M669 45.7V54.3M675 43.6V56.4M681 41.0V59.0M687 45.5V54.5M693 44.9V55.1M699 42.3V57.7M705 40.2V59.8M711 42.6V57.4M717 43.8V56.2M723 40.0V60.0M729 46.0V54.0M735 40.8V59.2M741 44.5V55.5M747 45.4V54.6M753 45.6V54.4M759 44.3V55.7M765 41.1V58.9M771 8.8V91.2M777 11.2V88.8M783 14.8V85.2M789 13.1V86.9M795 10.6V89.4M801 8.8V91.2M807 12.1V87.9M813 7.5V92.5M819 8.9V91.1M825 42.9V57.1M831 40.7V59.3M837 41.6V58.4M843 44.5V55.5M849 40.0V60.0M855 45.6V54.4M861 43.6V56.4M867 41.4V58.6M873 45.3V54.7M879 43.2V56.8M885 46.1V53.9M891 42.0V58.0M897 41.4V58.6M903 42.6V57.4M909 40.7V59.3M915 16.0V84.0M921 17.1V82.9M927 43.4V56.6M933 40.9V59.1M939 40.2V59.8M945 43.3V56.7M951 42.0V58.0M957 45.9V54.1M963 41.8V58.2M969 42.2V57.8M975 39.9V60.1M981 41.0V59.0M987 44.5V55.5M993 43.8V56.2M999 42.0V58.0M1005 46.2V53.8M1011 43.3V56.7M1017 45.2V54.8M1023 14.8V85.2M1029 14.0V86.0M1035 11.0V89.0M1041 14.6V85.4M1047 9.2V90.8M1053 6.1V93.9M1059 12.3V87.7M1065 11.4V88.6M1071 40.6V59.4M1077 40.2V59.8M1083 45.3V54.7M1089 45.2V54.8M1095 44.8V55.2M1101 44.8V55.2M1107 43.2V56.8M1113 42.5V57.5M1119 44.6V55.4M1125 46.3V53.7M1131 43.6V56.4M1137 43.9V56.1M1143 42.7V57.3M1149 40.2V59.8M1155 41.9V58.1M1161 43.0V57.0M1167 42.3V57.7M1173 42.0V58.0M1179 46.0V54.0M1185 40.5V59.5M1191 41.3V58.7M1197 40.7V59.3"/></g>
           </svg>
-          <figcaption>Without Steady Sound: whisper, BOOM, whisper</figcaption>
+          <figcaption>whisper, BOOM, whisper</figcaption>
         </figure>
         <figure>
+          <p class="wave-label">With Steady Sound</p>
           <svg viewBox="0 0 600 100" preserveAspectRatio="none">
             <line class="wave-mid" x1="0" y1="50" x2="600" y2="50"/>
-            <g class="wave-scroll"><path class="wave wave-after" d="M3 29.6V70.4M9 31.7V68.3M15 30.9V69.1M21 33.2V66.8M27 30.0V70.0M33 32.9V67.1M39 33.4V66.6M45 32.0V68.0M51 33.0V67.0M57 31.5V68.5M63 33.4V66.6M69 33.6V66.4M75 32.4V67.6M81 32.0V68.0M87 31.9V68.1M93 33.3V66.7M99 28.8V71.2M105 29.4V70.6M111 32.2V67.8M117 32.0V68.0M123 30.6V69.4M129 32.0V68.0M135 31.8V68.2M141 29.4V70.6M147 29.0V71.0M153 31.5V68.5M159 31.1V68.9M165 32.1V67.9M171 24.7V75.3M177 24.7V75.3M183 24.7V75.3M189 24.7V75.3M195 24.7V75.3M201 24.7V75.3M207 24.7V75.3M213 24.7V75.3M219 24.7V75.3M225 30.4V69.6M231 32.3V67.7M237 30.2V69.8M243 28.8V71.2M249 28.2V71.8M255 30.4V69.6M261 31.9V68.1M267 30.9V69.1M273 32.8V67.2M279 29.4V70.6M285 31.3V68.7M291 29.1V70.9M297 31.0V69.0M303 31.8V68.2M309 28.6V71.4M315 24.7V75.3M321 24.7V75.3M327 29.3V70.7M333 28.7V71.3M339 28.9V71.1M345 32.0V68.0M351 30.3V69.7M357 32.1V67.9M363 32.5V67.5M369 32.6V67.4M375 30.9V69.1M381 31.3V68.7M387 30.1V69.9M393 28.8V71.2M399 30.7V69.3M405 29.4V70.6M411 28.5V71.5M417 29.1V70.9M423 24.7V75.3M429 24.7V75.3M435 24.7V75.3M441 24.9V75.1M447 24.7V75.3M453 24.7V75.3M459 24.7V75.3M465 24.7V75.3M471 30.2V69.8M477 29.2V70.8M483 29.9V70.1M489 33.1V66.9M495 30.4V69.6M501 29.2V70.8M507 29.4V70.6M513 29.4V70.6M519 31.2V68.8M525 33.0V67.0M531 29.5V70.5M537 31.7V68.3M543 29.2V70.8M549 27.8V72.2M555 30.9V69.1M561 31.1V68.9M567 28.4V71.6M573 29.4V70.6M579 32.9V67.1M585 31.8V68.2M591 31.8V68.2M597 28.2V71.8M603 29.6V70.4M609 31.7V68.3M615 30.9V69.1M621 33.2V66.8M627 30.0V70.0M633 32.9V67.1M639 33.4V66.6M645 32.0V68.0M651 33.0V67.0M657 31.5V68.5M663 33.4V66.6M669 33.6V66.4M675 32.4V67.6M681 32.0V68.0M687 31.9V68.1M693 33.3V66.7M699 28.8V71.2M705 29.4V70.6M711 32.2V67.8M717 32.0V68.0M723 30.6V69.4M729 32.0V68.0M735 31.8V68.2M741 29.4V70.6M747 29.0V71.0M753 31.5V68.5M759 31.1V68.9M765 32.1V67.9M771 24.7V75.3M777 24.7V75.3M783 24.7V75.3M789 24.7V75.3M795 24.7V75.3M801 24.7V75.3M807 24.7V75.3M813 24.7V75.3M819 24.7V75.3M825 30.4V69.6M831 32.3V67.7M837 30.2V69.8M843 28.8V71.2M849 28.2V71.8M855 30.4V69.6M861 31.9V68.1M867 30.9V69.1M873 32.8V67.2M879 29.4V70.6M885 31.3V68.7M891 29.1V70.9M897 31.0V69.0M903 31.8V68.2M909 28.6V71.4M915 24.7V75.3M921 24.7V75.3M927 29.3V70.7M933 28.7V71.3M939 28.9V71.1M945 32.0V68.0M951 30.3V69.7M957 32.1V67.9M963 32.5V67.5M969 32.6V67.4M975 30.9V69.1M981 31.3V68.7M987 30.1V69.9M993 28.8V71.2M999 30.7V69.3M1005 29.4V70.6M1011 28.5V71.5M1017 29.1V70.9M1023 24.7V75.3M1029 24.7V75.3M1035 24.7V75.3M1041 24.9V75.1M1047 24.7V75.3M1053 24.7V75.3M1059 24.7V75.3M1065 24.7V75.3M1071 30.2V69.8M1077 29.2V70.8M1083 29.9V70.1M1089 33.1V66.9M1095 30.4V69.6M1101 29.2V70.8M1107 29.4V70.6M1113 29.4V70.6M1119 31.2V68.8M1125 33.0V67.0M1131 29.5V70.5M1137 31.7V68.3M1143 29.2V70.8M1149 27.8V72.2M1155 30.9V69.1M1161 31.1V68.9M1167 28.4V71.6M1173 29.4V70.6M1179 32.9V67.1M1185 31.8V68.2M1191 31.8V68.2M1197 28.2V71.8"/></g>
+            <g class="wave-scroll wave-scroll-rev"><path class="wave wave-after" d="M3 29.6V70.4M9 31.7V68.3M15 30.9V69.1M21 33.2V66.8M27 30.0V70.0M33 32.9V67.1M39 33.4V66.6M45 32.0V68.0M51 33.0V67.0M57 31.5V68.5M63 33.4V66.6M69 33.6V66.4M75 32.4V67.6M81 32.0V68.0M87 31.9V68.1M93 33.3V66.7M99 28.8V71.2M105 29.4V70.6M111 32.2V67.8M117 32.0V68.0M123 30.6V69.4M129 32.0V68.0M135 31.8V68.2M141 29.4V70.6M147 29.0V71.0M153 31.5V68.5M159 31.1V68.9M165 32.1V67.9M171 24.7V75.3M177 24.7V75.3M183 24.7V75.3M189 24.7V75.3M195 24.7V75.3M201 24.7V75.3M207 24.7V75.3M213 24.7V75.3M219 24.7V75.3M225 30.4V69.6M231 32.3V67.7M237 30.2V69.8M243 28.8V71.2M249 28.2V71.8M255 30.4V69.6M261 31.9V68.1M267 30.9V69.1M273 32.8V67.2M279 29.4V70.6M285 31.3V68.7M291 29.1V70.9M297 31.0V69.0M303 31.8V68.2M309 28.6V71.4M315 24.7V75.3M321 24.7V75.3M327 29.3V70.7M333 28.7V71.3M339 28.9V71.1M345 32.0V68.0M351 30.3V69.7M357 32.1V67.9M363 32.5V67.5M369 32.6V67.4M375 30.9V69.1M381 31.3V68.7M387 30.1V69.9M393 28.8V71.2M399 30.7V69.3M405 29.4V70.6M411 28.5V71.5M417 29.1V70.9M423 24.7V75.3M429 24.7V75.3M435 24.7V75.3M441 24.9V75.1M447 24.7V75.3M453 24.7V75.3M459 24.7V75.3M465 24.7V75.3M471 30.2V69.8M477 29.2V70.8M483 29.9V70.1M489 33.1V66.9M495 30.4V69.6M501 29.2V70.8M507 29.4V70.6M513 29.4V70.6M519 31.2V68.8M525 33.0V67.0M531 29.5V70.5M537 31.7V68.3M543 29.2V70.8M549 27.8V72.2M555 30.9V69.1M561 31.1V68.9M567 28.4V71.6M573 29.4V70.6M579 32.9V67.1M585 31.8V68.2M591 31.8V68.2M597 28.2V71.8M603 29.6V70.4M609 31.7V68.3M615 30.9V69.1M621 33.2V66.8M627 30.0V70.0M633 32.9V67.1M639 33.4V66.6M645 32.0V68.0M651 33.0V67.0M657 31.5V68.5M663 33.4V66.6M669 33.6V66.4M675 32.4V67.6M681 32.0V68.0M687 31.9V68.1M693 33.3V66.7M699 28.8V71.2M705 29.4V70.6M711 32.2V67.8M717 32.0V68.0M723 30.6V69.4M729 32.0V68.0M735 31.8V68.2M741 29.4V70.6M747 29.0V71.0M753 31.5V68.5M759 31.1V68.9M765 32.1V67.9M771 24.7V75.3M777 24.7V75.3M783 24.7V75.3M789 24.7V75.3M795 24.7V75.3M801 24.7V75.3M807 24.7V75.3M813 24.7V75.3M819 24.7V75.3M825 30.4V69.6M831 32.3V67.7M837 30.2V69.8M843 28.8V71.2M849 28.2V71.8M855 30.4V69.6M861 31.9V68.1M867 30.9V69.1M873 32.8V67.2M879 29.4V70.6M885 31.3V68.7M891 29.1V70.9M897 31.0V69.0M903 31.8V68.2M909 28.6V71.4M915 24.7V75.3M921 24.7V75.3M927 29.3V70.7M933 28.7V71.3M939 28.9V71.1M945 32.0V68.0M951 30.3V69.7M957 32.1V67.9M963 32.5V67.5M969 32.6V67.4M975 30.9V69.1M981 31.3V68.7M987 30.1V69.9M993 28.8V71.2M999 30.7V69.3M1005 29.4V70.6M1011 28.5V71.5M1017 29.1V70.9M1023 24.7V75.3M1029 24.7V75.3M1035 24.7V75.3M1041 24.9V75.1M1047 24.7V75.3M1053 24.7V75.3M1059 24.7V75.3M1065 24.7V75.3M1071 30.2V69.8M1077 29.2V70.8M1083 29.9V70.1M1089 33.1V66.9M1095 30.4V69.6M1101 29.2V70.8M1107 29.4V70.6M1113 29.4V70.6M1119 31.2V68.8M1125 33.0V67.0M1131 29.5V70.5M1137 31.7V68.3M1143 29.2V70.8M1149 27.8V72.2M1155 30.9V69.1M1161 31.1V68.9M1167 28.4V71.6M1173 29.4V70.6M1179 32.9V67.1M1185 31.8V68.2M1191 31.8V68.2M1197 28.2V71.8"/></g>
           </svg>
-          <figcaption>With Steady Sound: everything in a comfortable range</figcaption>
+          <figcaption>everything in a comfortable range</figcaption>
         </figure>
       </div>
     </div>
@@ -142,18 +165,18 @@
   <section id="how-it-works" class="section section-alt">
     <div class="wrap">
       <h2>Up and running in two minutes</h2>
-      <p class="section-sub">No mixer to learn. Pick a mode once and take your hand off the keyboard.</p>
+      <p class="section-sub">No complicated mixer or audio plugin settings to learn. Pick a mode once and let Steady Sound take over. Just sit back and enjoy your show the way it's supposed to sound.</p>
 
       <ol class="steps">
         <li class="step">
           <span class="step-num">1</span>
           <h3>Buy and download</h3>
-          <p>Check out in under a minute. Your download link and license key arrive together by email.</p>
+          <p>Check out in under a minute. Your download link and license key arrive instantly in your email.</p>
         </li>
         <li class="step">
           <span class="step-num">2</span>
-          <h3>Open it and paste your key</h3>
-          <p>Steady Sound appears in your menu bar. Paste your key, then allow it to hear your Mac's audio when macOS asks.</p>
+          <h3>Open and enter your key</h3>
+          <p>Steady Sound appears in your menu bar. Enter your key, then allow it to hear your Mac's audio when prompted.</p>
         </li>
         <li class="step">
           <span class="step-num">3</span>
@@ -218,12 +241,12 @@
           <p>You barely notice it, but you stop tapping the volume keys. Movies still sound big.</p>
         </div>
         <div class="mode-card mode-card-featured">
-          <p class="mode-tag">Late nights</p>
+          <p class="mode-tag">Admin pick</p>
           <h3>Night</h3>
-          <p>Everything sits in a narrow, low range. Whispers stay audible and explosions won't wake anyone.</p>
+          <p>Our favorite setting. Everything sits in a narrow, low range. Whispers stay audible and explosions won't wake anyone.</p>
         </div>
         <div class="mode-card">
-          <p class="mode-tag">Mumbly dramas</p>
+          <p class="mode-tag">Whisper no more</p>
           <h3>Clear Voice</h3>
           <p>Speech comes clearly forward, even at the cost of some music and effects. For when everyone mumbles.</p>
         </div>
@@ -231,7 +254,7 @@
 
       <div class="advanced-note">
         <h3>Like to tinker?</h3>
-        <p>An optional Advanced window adds a simple low, mid and high EQ on top of any mode. It's off by default and tucked away so it never gets in the way.</p>
+        <p>An optional Advanced window adds a simple low, mid, and high EQ on top of any mode. It's off by default and tucked away so it never gets in the way.</p>
       </div>
     </div>
   </section>
@@ -284,7 +307,7 @@
   <!-- PRIVACY -->
   <section id="privacy" class="section">
     <div class="wrap narrow privacy">
-      <h2>Hears everything. Keeps nothing.</h2>
+      <h2>Your audio, and privacy, is protected.</h2>
       <p class="section-sub">Steady Sound has to listen to your Mac's audio to even it out. Here's exactly what that means.</p>
       <ul class="checklist">
         <li><strong>Nothing is recorded.</strong> Sound is processed live and never written to disk.</li>
@@ -320,7 +343,7 @@
   <section class="section">
     <div class="wrap narrow maker">
       <h2>Made by one person who cares how things sound</h2>
-      <p>Steady Sound is built by Neal Danes, a musician in Michigan who got tired of tapping the volume up for every line and slamming it back down for every explosion. It's an independent app with no investors, no tracking and no upsells. Just one small tool that does one job well.</p>
+      <p>Steady Sound is built by Neal Danes, a musician in Michigan who got tired of tapping the volume up for every quiet scene and slamming it back down for every fight scene or explosion. It's an independent app with no investors, no tracking, and no upsells. Just one small tool that does one job well.</p>
       <p>Questions or feedback? <a href="mailto:steadysoundapp@gmail.com">steadysoundapp@gmail.com</a> reaches me directly.</p>
     </div>
   </section>
@@ -340,7 +363,7 @@
         </details>
         <details>
           <summary>Does it work with Netflix and other streaming services?</summary>
-          <p>Yes. We've tested it with Netflix in Safari, YouTube in Chrome, the Apple TV app and Plex. It works on your Mac's system audio, so any app that plays sound works.</p>
+          <p>Yes. We've tested it on your favorite streaming services like Netflix and Hulu, the most popular browsers like Safari and Chrome, and even YouTube. It works on your Mac's system audio, so any app that plays sound works.</p>
         </details>
         <details>
           <summary>Does it work with AirPods and other Bluetooth audio?</summary>
@@ -383,7 +406,7 @@
     <div class="wrap">
       <h2>Your next movie night, hands off the keyboard</h2>
       <p class="section-sub">Set it once. Forget it's there.</p>
-      <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; download — $5/year</a>
+      <a class="button button-primary button-large" href="https://steadysound.lemonsqueezy.com/checkout/buy/06044ef3-6d34-4302-854d-66e1fed92725">Buy &amp; Download. $5/year</a>
       <p class="hero-note">macOS 14.2 or later · use on up to 3 Macs</p>
     </div>
   </section>
@@ -402,5 +425,41 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var dropdown = document.querySelector('.menubar-mock-dropdown');
+  var cursor = document.querySelector('.menubar-mock-cursor');
+  var rows = dropdown ? dropdown.querySelectorAll('.mode-row') : [];
+  if (!dropdown || !cursor || !rows.length) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var current = 0;
+
+  function place(idx) {
+    var rowRect = rows[idx].getBoundingClientRect();
+    var dropRect = dropdown.getBoundingClientRect();
+    cursor.style.top = (rowRect.top - dropRect.top + rowRect.height / 2 - 8) + 'px';
+    cursor.style.left = (rowRect.right - dropRect.left - 26) + 'px';
+  }
+
+  function activate(idx) {
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].classList.toggle('mode-row-active', i === idx);
+    }
+    place(idx);
+    cursor.classList.remove('is-clicking');
+    void cursor.offsetWidth;
+    cursor.classList.add('is-clicking');
+  }
+
+  place(current);
+  cursor.classList.add('is-visible');
+
+  setInterval(function () {
+    current = (current + 1) % rows.length;
+    activate(current);
+  }, 2400);
+})();
+</script>
 </body>
 </html>
